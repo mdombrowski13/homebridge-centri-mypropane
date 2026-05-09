@@ -1,0 +1,83 @@
+{
+  "pluginAlias": "CentriMyPropane",
+  "pluginType": "platform",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "required": ["name", "userId", "deviceId", "deviceAuthCode"],
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "default": "Propane Tank"
+      },
+      "userId": {
+        "title": "User ID",
+        "type": "string",
+        "description": "Your CentriConnect/MyPropane account user ID. This is shown in the MyPropane iOS app account/profile settings."
+      },
+      "deviceId": {
+        "title": "Device ID",
+        "type": "string",
+        "description": "The Device ID printed on the card included with your MyPropane sensor."
+      },
+      "deviceAuthCode": {
+        "title": "Device Authentication Code",
+        "type": "string",
+        "description": "The Device Authentication Code printed on the card included with your MyPropane sensor."
+      },
+      "tankCapacityGallons": {
+        "title": "Tank Capacity Override (gallons)",
+        "type": "number",
+        "minimum": 1,
+        "description": "Optional override for total tank capacity. Leave blank to use the TankSize value returned by CentriConnect."
+      },
+      "pollIntervalMinutes": {
+        "title": "Poll Interval (minutes)",
+        "type": "number",
+        "default": 360,
+        "minimum": 60,
+        "description": "How often to check the propane level in minutes. Default is 360 (6 hours), matching the typical Centri/MyPropane update cadence."
+      },
+      "lowThreshold": {
+        "title": "Low Level Threshold (%)",
+        "type": "number",
+        "default": 30,
+        "minimum": 0,
+        "maximum": 100,
+        "description": "Propane percentage threshold you can use for HomeKit automations from the propane percentage sensor. Default is 30."
+      },
+      "batteryLowThreshold": {
+        "title": "Battery Low Threshold (%)",
+        "type": "number",
+        "default": 20,
+        "minimum": 0,
+        "maximum": 100,
+        "description": "Monitor battery percentage below which HomeKit reports low battery. Default is 20."
+      },
+      "apiBaseUrl": {
+        "title": "API Base URL",
+        "type": "string",
+        "default": "https://api.centriconnect.com/centriconnect",
+        "description": "Base URL for the CentriConnect API. Only change this if the endpoint moves."
+      }
+    }
+  },
+  "form": [
+    "name",
+    "userId",
+    "deviceId",
+    "deviceAuthCode",
+    "tankCapacityGallons",
+    "pollIntervalMinutes",
+    "lowThreshold",
+    "batteryLowThreshold",
+    {
+      "type": "fieldset",
+      "title": "Advanced",
+      "expandable": true,
+      "expanded": false,
+      "items": ["apiBaseUrl"]
+    }
+  ]
+}

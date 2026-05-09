@@ -1,0 +1,47 @@
+{
+  "name": "homebridge-centri-mypropane",
+  "version": "1.0.1",
+  "description": "Homebridge plugin for Centri MyPropane propane tank sensors via HomeKit Battery service",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "test": "jest"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "homebridge",
+    "propane",
+    "tank",
+    "centri",
+    "centriconnect",
+    "mypropane"
+  ],
+  "author": "Michael Dombrowski",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdombrowski13/homebridge-centri-mypropane.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mdombrowski13/homebridge-centri-mypropane/issues"
+  },
+  "homepage": "https://github.com/mdombrowski13/homebridge-centri-mypropane#readme",
+  "engines": {
+    "node": "^20.0.0 || ^22.0.0 || ^24.0.0",
+    "homebridge": "^1.8.5 || ^2.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.0.0",
+    "homebridge": "^1.8.5",
+    "jest": "^30.3.0",
+    "ts-jest": "^29.4.9",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "homebridge": "^1.8.5 || ^2.0.0"
+  }
+}

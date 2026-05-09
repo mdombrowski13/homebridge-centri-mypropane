@@ -1,0 +1,1 @@
+{"version":3,"file":"state-manager.d.ts","sourceRoot":"","sources":["../src/state-manager.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,cAAc,EAAE,YAAY,EAAE,YAAY,EAAE,MAAM,SAAS,CAAC;AAErE,qBAAa,YAAY;IACvB,OAAO,CAAC,KAAK,CAA6B;IAE1C,UAAU,CAAC,QAAQ,EAAE,cAAc,GAAG,OAAO;IAK7C,MAAM,CAAC,QAAQ,EAAE,cAAc,EAAE,MAAM,EAAE,YAAY,GAAG,YAAY;IAcpE,UAAU,IAAI,YAAY,GAAG,IAAI;CAGlC"}

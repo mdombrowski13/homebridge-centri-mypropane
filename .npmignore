@@ -1,0 +1,16 @@
+src/
+tests/
+coverage/
+*.map
+*.md
+!README.md
+!CHANGELOG.md
+jest.config.js
+tsconfig*.json
+*.local.json
+config.json
+.env
+DevPlan.md
+Architecture.md
+Handoff.md
+live-test.js
