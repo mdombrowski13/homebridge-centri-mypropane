@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- Removed Homebridge from published peer dependencies to satisfy Homebridge verification checks.
+
 ## 1.0.1
 
 - Prepared the public Homebridge release export.
