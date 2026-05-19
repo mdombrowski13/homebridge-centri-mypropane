@@ -4,6 +4,8 @@ A [Homebridge](https://homebridge.io) plugin that integrates Centri MyPropane / 
 
 Monitor your propane level as a percentage, estimate gallons remaining, and expose the monitor's actual battery state to HomeKit.
 
+[![verified-by-homebridge](https://img.shields.io/badge/homebridge-verified-blueviolet?color=%23491F59&style=for-the-badge&logoColor=%23FFFFFF&logo=homebridge)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
+
 ---
 
 ## How It Works
